@@ -85,4 +85,9 @@ acceptBtn.addEventListener('click', () => {
     dialogOne.style.display = 'none';
 });
 
+settingsBtn.addEventListener('click', () => {
+    dialogOne.style.display = 'none';
+    dialogTwo.style.display = 'block';
+});
+
 
