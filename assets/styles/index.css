@@ -28,3 +28,67 @@ body {
     color: #402272;
     font-size: 20px;
 }
+
+.dialog-one {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  background: rgb(223, 212, 236);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cookie{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dialog h2 {
+  color: #4b2a7a;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.dialog p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.acceptBtn {
+  background-color: #4b2a7a;
+  color: white;
+}
+
+.acceptBtn:hover {
+  background-color: rgb(47, 22, 86);
+}
+
+.settingsBtn {
+  background-color: #c3acea;
+  color: #4b2a7a;
+}
+
+.settingsBtn:hover {
+  background-color: rgb(159, 134, 199);
+}
