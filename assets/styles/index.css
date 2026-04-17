@@ -92,3 +92,42 @@ button {
 .settingsBtn:hover {
   background-color: rgb(159, 134, 199);
 }
+
+.dialog-two {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  background: rgb(223, 212, 236);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  
+}
+
+.cookie-settings {
+  padding: 20px;
+  border-radius: 12px;
+  gap: 12px;
+}
+
+.cookie-settings h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #432a6e;
+}
+
+.cookies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookies p {
+  font-size: 18px;
+  color: #333;
+}
+
