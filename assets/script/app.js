@@ -1,7 +1,6 @@
 'use strict';
 
 const dialogOne = document.getElementById('dialog-one');
-
 const acceptBtn = document.getElementById('acceptBtn');
 const settingsBtn = document.getElementById('settingsBtn');
 
@@ -86,9 +85,4 @@ acceptBtn.addEventListener('click', () => {
     dialogOne.style.display = 'none';
 });
 
-settingsBtn.addEventListener('click', () => {
 
-    setCookie("reject", "true", LIFETIME);
-
-    dialogOne.style.display = 'none';
-});
