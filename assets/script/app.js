@@ -91,3 +91,43 @@ settingsBtn.addEventListener('click', () => {
 });
 
 
+const dialogTwo = document.getElementById('dialog-two');
+const saveBtn = document.getElementById('saveBtn');
+
+const browserCheck = document.getElementById('cookie-browser');
+const osCheck = document.getElementById('cookie-os');
+const widthCheck = document.getElementById('cookie-width');
+const heightCheck = document.getElementById('cookie-height');
+
+
+ 
+saveBtn.addEventListener('click', () => {
+
+    let selected = false;
+
+    if (browserCheck.checked) {
+        setCookie("browser", getBrowser(), LIFETIME);
+        selected = true;
+    }
+
+    if (osCheck.checked) {
+        setCookie("os", getOS(), LIFETIME);
+        selected = true;
+    }
+
+    if (widthCheck.checked) {
+        setCookie("width", screen.width, LIFETIME);
+        selected = true;
+    }
+
+    if (heightCheck.checked) {
+        setCookie("height", screen.height, LIFETIME);
+        selected = true;
+    }
+
+    if (!selected) {
+        setCookie("reject", "true", LIFETIME);
+    }
+
+    dialogTwo.style.display = 'none';
+});
